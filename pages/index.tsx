@@ -16,6 +16,8 @@ import {Trial} from '../components/trial';
 import {Footer} from '../components/footer';
 import Link from 'next/link';
 
+interface Props {}
+
 const Home: NextPage = () => {
    return (
       <Layout>
