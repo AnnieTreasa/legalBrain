@@ -57,7 +57,3 @@ PINECONE_ENVIRONMENT=
 ## Run the app
 
 Once you've verified that the embeddings and content have been successfully added to your Pinecone, you can run the app `npm run dev` to launch the local dev environment and then type a question in the chat interface.
-
-## Credit
-
-Frontend of this repo is inspired by [langchain-chat-nextjs](https://github.com/zahidkhawaja/langchain-chat-nextjs)

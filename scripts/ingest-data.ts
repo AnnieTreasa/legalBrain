@@ -7,7 +7,7 @@ import { PINECONE_INDEX_NAME, PINECONE_NAME_SPACE } from '@/config/pinecone';
 import fs from "fs";
 
 /* Name of directory to retrieve files from. You can change this as required */
-const filePath = 'docs/Judgement.pdf';
+const filePath = 'docs/tp.pdf';
 
 export const run = async () => {
   try {
@@ -27,7 +27,7 @@ export const run = async () => {
 
     const docs = await textSplitter.splitDocuments(rawDocs);
     console.log('split docs', docs);
-    // fs.writeFileSync("scripts/bookone.json" , JSON.stringify(docs))
+    fs.writeFileSync("scripts/test.json" , JSON.stringify(docs))
     console.log('creating vector store...');
     /*create and store the embeddings in the vectorStore*/
     const embeddings = new OpenAIEmbeddings();
@@ -52,3 +52,4 @@ export const run = async () => {
   await run();
   console.log('ingestion complete');
 })();
+
